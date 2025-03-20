@@ -17,19 +17,19 @@
     padding: 14px 16px;
     text-decoration: none;
   }
-  
-  /* Change the link color to #111 (black) on hover */
   #nav li a:hover {
     background-color: yellow;
     color: black;
   }
-  
-
 body { 
     font-family: Arial, sans-serif;    
     margin: 20px;    
     padding: 0;    
     background-color: #f4f4f4; 
+}
+#summary p{
+    margin: 0;
+    padding: 0;
 }
 #contact p{
     margin: 0;
@@ -45,11 +45,9 @@ body {
     padding: 0;
     overflow: hidden;
     display: block;
-    padding: 0px 16px;
+    padding: 2px 16px;
     float: right;
     border: 3px solid black;
-    
-
 }
 table, th, td {
     border:1px solid black;
@@ -61,8 +59,20 @@ th, td{
 hr{
     border-style: solid;
     border-width: 2px;
+    margin-top: 12px;
+    
 }
 #contact{
     padding-bottom: 40px;
+}
+#wgu_head{
+    padding-left: 30px;
+}
+#wgu_head a:hover{
+    background-color: yellow;
+    color: black;
+}
+footer{
+    text-align: center;
 }
 
