@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        function displayDate() {
+            document.getElementById("currentDate").innerHTML = new Date().toDateString();
+            console.log("Page loaded on " + new Date().toISOString());
+        }
+    </script>
+</head>
+<body onload="displayDate()">
+    <header>
+        <h1>My Portfolio</h1>
+        <nav id="nav">
+            <ul>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="coverletter.html">Cover Letter</a></li>
+                <li><a href="careergoals.html">Career Goals</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Technology Skills</p>
+            <p>Technology Skills</p>
+        </section>
+        <section>
+            <div id="currentDate"></div>
+        </section>
+        <hr>
+        <section class="skills">
+            <h2>Skills</h2>
+            <table> 
+                <tr> 
+                    <th> Technology Skills </th>
+                    <th> Soft Skills </th> 
+                    <th> Hard Skills </th>
+                    <th> Leadership Skills </th>
+                </tr> 
+               
+                <tr> 
+                    <td> 9th passed </td>
+                    <td> 84% </td>
+                    <td> JEHS </td> 
+                    <td> JEHS </td> 
+                </tr>
+                <tr> 
+                    <td> 9th passed </td>
+                    <td> 84% </td>
+                    <td> JEHS </td> 
+                    <td> JEHS </td> 
+                </tr>
+                <tr> 
+                    <td> 9th passed </td>
+                    <td> 84% </td>
+                    <td> JEHS </td> 
+                    <td> JEHS </td> 
+                </tr>
+                <tr> 
+                    <td> 9th passed </td>
+                    <td> 84% </td>
+                     <td> JEHS </td> 
+                    <td> JEHS </td> 
+                </tr>
+            </table>
+        </section>
+        <hr>
+        <section>
+            <h2>Education</h2>
+        </section>
+        <article>  
+            <ul>
+                <h3><a href="https://www.wgu.edu/">WGU</a></h3>
+                <li> Hands-on experience with Java, Spring Boot, SQL, REST APIs, Git, and Agile methodologies </li>
+                <li> <em>Expected certifications:</em> <strong>AWS, CompTIA, ITIL® (included in coursework)</strong></li>
+                <li> Project-based learning – designing scalable applications & enterprise solutions </li>
+            </ul>
+        </article>
+        <hr>
+      
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                console.log("JavaScript is working! Welcome to the Portfolio Website.");
+            });
+        </script>
+    </main
+    <footer>
+        <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
