@@ -6,14 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resume</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js">
-
+    <script>
+        function displayDate() {
+            document.getElementById("currentDate").innerHTML = new Date().toDateString();
+            console.log("Page loaded on " + new Date().toISOString());
+        }
     </script>
 </head>
-<body>
+<body onload="displayDate()">
     <header>
         <h1>My Portfolio</h1>
-        <nav>
+        <nav id="nav">
             <ul>
                 <li><a href="resume.html">Resume</a></li>
                 <li><a href="coverletter.html">Cover Letter</a></li>
@@ -22,51 +25,70 @@
         </nav>
     </header>
     <main>
-        <section>
+        <section id="contact">
             <h2>Contact</h2>
-            <table> 
-                <tr> 
-                <th> Educational qualification </th>
-                <th> marks </th> 
-                <th>Institution name</th>
-                </tr> 
-               
-                <tr> 
-                <td> 9th passed </td>
-                <td> 84% </td>
-                <td> JEHS </td> 
-                </tr>
-            </table>
+            <p>Technology Skills</p>
+            <p>Technology Skills</p>
         </section>
         <section>
+            <div id="currentDate"></div>
+        </section>
+        <hr>
+        <section class="skills">
             <h2>Skills</h2>
             <table> 
                 <tr> 
-                <th> Technology Skills </th>
-                <th> Soft Skills </th> 
-                <th> Hard Skills </th>
-                <th> Leadership Skills </th>
+                    <th> Technology Skills </th>
+                    <th> Soft Skills </th> 
+                    <th> Hard Skills </th>
+                    <th> Leadership Skills </th>
                 </tr> 
                
                 <tr> 
-                <td> 9th passed </td>
-                <td> 84% </td>
-                <td> JEHS </td> 
+                    <td> 9th passed </td>
+                    <td> 84% </td>
+                    <td> JEHS </td> 
+                    <td> JEHS </td> 
+                </tr>
+                <tr> 
+                    <td> 9th passed </td>
+                    <td> 84% </td>
+                    <td> JEHS </td> 
+                    <td> JEHS </td> 
+                </tr>
+                <tr> 
+                    <td> 9th passed </td>
+                    <td> 84% </td>
+                    <td> JEHS </td> 
+                    <td> JEHS </td> 
+                </tr>
+                <tr> 
+                    <td> 9th passed </td>
+                    <td> 84% </td>
+                     <td> JEHS </td> 
+                    <td> JEHS </td> 
                 </tr>
             </table>
         </section>
+        <hr>
         <section>
             <h2>Education</h2>
         </section>
         <article>  
             <ul>
-                <h3>WGU</h3>
-                <li> Self cofidence and great patience </li>
-                <li> Analyzing every angle of a project before working on it</li>
-                <li> Willingness to learn </li>
-                <li> Adaptability to change environment </li>
+                <h3><a href="https://www.wgu.edu/">WGU</a></h3>
+                <li> Hands-on experience with Java, Spring Boot, SQL, REST APIs, Git, and Agile methodologies </li>
+                <li> <em>Expected certifications:</em> <strong>AWS, CompTIA, ITIL® (included in coursework)</strong></li>
+                <li> Project-based learning – designing scalable applications & enterprise solutions </li>
             </ul>
         </article>
+        <hr>
+      
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                console.log("JavaScript is working! Welcome to the Portfolio Website.");
+            });
+        </script>
     </main
     <footer>
         <p>&copy; 2025 My Portfolio. All Rights Reserved.</p>
